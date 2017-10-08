@@ -1,0 +1,90 @@
+//FONTSTYLES
+$titleFont:'Montserrat', sans-serif;
+$bodyFont:'Roboto', sans-serif;
+
+//COLORS
+$babyBlue: rgb(112, 195, 225);
+$darkGrey: rgb(74, 74, 74);
+$lightGrey: rgb(164, 163, 163);
+$black: rgb(0,0,0);
+
+//MIXINS
+$screen-md: 1247px;
+
+@mixin fontSize($scale){
+	font-size: $scale * 1px;
+	font-size: ($scale/10) * 1rem;
+}
+
+//COMMON STYLES
+
+p{
+  @include fontSize(12);
+  line-height: 1.5;
+  color: $lightGrey;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $bodyFont;
+  margin: 10px 0;
+}
+
+h1{
+  @include fontSize(20);
+}
+
+h2{
+  @include fontSize(18);
+}
+
+h3{
+  @include fontSize(16);
+}
+
+h4{
+  @include fontSize(14);
+}
+
+h5{
+  @include fontSize(12);
+}
+
+
+.container{
+   max-width: 1200px;
+   margin:0 auto ;
+   display: block;
+}
+// Responsive design
+@media all and (max-width: 1390px) {
+
+}
+@media all and (max-width: 1024px) { 
+    
+}
+@media all and (max-width: 940px) {
+
+}
+
+@media all and (max-width: 768px) {
+    
+}
+
+@media all and (max-width: 667px) {
+
+}
+
+@media all and (max-width: 480px) {
+    
+}
+
+@media all and (max-width: 320px) {
+   
+   
+}
+
+
